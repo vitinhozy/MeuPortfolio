@@ -1,0 +1,510 @@
+/* ============================================
+   RESET E VARIÁVEIS GLOBAIS
+   ============================================ */
+
+:root {
+    --primary-color: #2e627a;
+    --secondary-color: #001f3f;
+    --text-dark: #ffffff;
+    --text-light: #b0c4de;
+    --bg-light: #1a3a52;
+    --bg-white: #0d2847;
+    --border-color: #2a5a7f;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #001f3f 0%, #0d2847 50%, #1a3a52 100%);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* ============================================
+   NAVEGAÇÃO DE REDES SOCIAIS
+   ============================================ */
+
+.social-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.social-nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--bg-white);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.social-nav a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ============================================
+   CONTAINER E LAYOUT
+   ============================================ */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+section {
+    margin-bottom: 80px;
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   SEÇÃO HERO
+   ============================================ */
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero-greeting {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    min-height: 80px;
+    display: inline-block;
+}
+
+#typing-text {
+    display: inline-block;
+    min-width: 400px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: #0ea5e9;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.hero-emphasis {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ============================================
+   BOTÃO CTA
+   ============================================ */
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--text-dark);
+    color: var(--bg-white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: var(--transition);
+    border: 2px solid var(--text-dark);
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   SEÇÃO SOBRE
+   ============================================ */
+
+.about {
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.about h2,
+.experience h2,
+.projects h2,
+.skills h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   SEÇÃO EXPERIÊNCIA
+   ============================================ */
+
+.experience {
+    margin-bottom: 80px;
+}
+
+.companies-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.company-item {
+    padding: 10px 20px;
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.company-item:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.job-entry {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.job-entry:last-child {
+    border-bottom: none;
+}
+
+.job-header {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.job-date {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.job-description {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job-description li {
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.job-description li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ============================================
+   SEÇÃO PROJETOS
+   ============================================ */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.project-card p {
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.project-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
+/* ============================================
+   SEÇÃO HABILIDADES
+   ============================================ */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   SEÇÃO CONTATO
+   ============================================ */
+
+.contact {
+    text-align: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--bg-white);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .social-nav {
+        position: static;
+        justify-content: center;
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-nav a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    .about,
+    .contact {
+        padding: 30px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .experience h2,
+    .projects h2,
+    .skills h2,
+    .contact h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-emphasis {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .job-title {
+        font-size: 18px;
+    }
+
+    .job-description li {
+        font-size: 14px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+
+    .skill-tag {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}

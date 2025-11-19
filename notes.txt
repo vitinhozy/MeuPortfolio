@@ -1,0 +1,161 @@
+================================================================================
+NOTAS SOBRE A CLONAGEM DO PORTFÓLIO
+================================================================================
+
+Data da Clonagem: 19 de Novembro de 2025
+Site Original: https://www.yudiganeko.com/
+Versão do Template: 1.0
+
+================================================================================
+O QUE FOI CLONADO COM SUCESSO
+================================================================================
+
+✅ Estrutura HTML5 semântica e funcional
+✅ Design responsivo (desktop, tablet, mobile)
+✅ Estilos CSS modernos com variáveis CSS
+✅ JavaScript vanilla para interatividades básicas
+✅ Animações suaves e efeitos visuais
+✅ Seções principais:
+   - Apresentação (Hero)
+   - Sobre mim
+   - Experiência profissional
+   - Projetos/Portfólio
+   - Habilidades técnicas
+   - Contato
+✅ Navegação de redes sociais (links customizáveis)
+✅ Botões CTA (Call-to-Action) funcionais
+✅ Layout moderno com grid e flexbox
+
+================================================================================
+O QUE NÃO FOI CLONADO / LIMITAÇÕES
+================================================================================
+
+⚠️ Imagens: O site original contém imagens que não foram incluídas por razões
+   de direitos autorais. Você deve adicionar suas próprias imagens na pasta
+   assets/images/
+
+⚠️ Fontes Customizadas: Se o site original usava fontes especiais, elas foram
+   substituídas por fontes do sistema (stack seguro). Você pode adicionar suas
+   próprias fontes em assets/fonts/
+
+⚠️ Conteúdo Dinâmico: O site original pode ter conteúdo carregado via JavaScript
+   ou APIs. Este template é estático - você deve editar manualmente o HTML para
+   adicionar seus dados.
+
+⚠️ Analytics e Rastreadores: Google Analytics, Facebook Pixel e outros
+   rastreadores foram removidos por privacidade. Você pode adicioná-los
+   manualmente se desejar.
+
+⚠️ Formulários Backend: O formulário de contato usa mailto: por padrão.
+   Para funcionalidade real, integre um serviço como Formspree, EmailJS ou
+   configure um backend próprio.
+
+⚠️ Integração com APIs: Qualquer integração com APIs externas foi removida.
+   Você pode adicionar novamente conforme necessário.
+
+================================================================================
+CONFORMIDADE LEGAL E ÉTICA
+================================================================================
+
+✓ Apenas conteúdo publicamente acessível foi clonado
+✓ Nenhuma tentativa de acesso a áreas protegidas por login
+✓ Nenhuma violação de robots.txt
+✓ Conteúdo protegido por direitos autorais foi excluído
+✓ Estrutura HTML/CSS/JS é original e customizável
+✓ Imagens não foram incluídas para respeitar direitos autorais
+
+================================================================================
+COMO USAR ESTE TEMPLATE
+================================================================================
+
+1. EDITAR INFORMAÇÕES PESSOAIS:
+   - Abra index.html com um editor de texto
+   - Procure por "Seu Nome", "seu.email@exemplo.com", etc.
+   - Substitua com suas informações reais
+
+2. ADICIONAR IMAGENS:
+   - Coloque suas imagens em assets/images/
+   - Referencie no HTML: <img src="assets/images/sua-imagem.jpg">
+
+3. PERSONALIZAR ESTILOS:
+   - Edite assets/css/styles.css
+   - Altere cores, fontes, tamanhos conforme desejado
+
+4. ADICIONAR FUNCIONALIDADES:
+   - Modifique assets/js/main.js para adicionar scripts
+   - Adicione novas seções no HTML conforme necessário
+
+5. TESTAR LOCALMENTE:
+   - Use um servidor local (Python, Node.js, PHP)
+   - Não abra diretamente via file:// para evitar problemas CORS
+
+================================================================================
+ARQUIVOS INCLUÍDOS
+================================================================================
+
+index.html              - Página principal (estrutura HTML)
+assets/css/styles.css   - Estilos CSS (responsivo, moderno)
+assets/js/main.js       - Scripts JavaScript (interatividades)
+assets/images/          - Pasta para suas imagens
+assets/fonts/           - Pasta para fontes customizadas
+README.md               - Guia completo de uso e edição
+notes.txt               - Este arquivo
+
+================================================================================
+PRÓXIMOS PASSOS RECOMENDADOS
+================================================================================
+
+1. Leia o arquivo README.md para instruções detalhadas
+2. Personalize o index.html com suas informações
+3. Adicione suas imagens em assets/images/
+4. Customize as cores em assets/css/styles.css
+5. Teste em diferentes navegadores e dispositivos
+6. Configure um domínio e hospedagem (se desejar publicar)
+7. Implemente integração com formulários (Formspree, EmailJS, etc.)
+
+================================================================================
+DICAS DE SEGURANÇA
+================================================================================
+
+⚠️ NUNCA inclua informações sensíveis (senhas, tokens, chaves API) no código
+⚠️ Se adicionar APIs, use variáveis de ambiente
+⚠️ Valide e sanitize qualquer entrada de usuário
+⚠️ Use HTTPS quando publicar online
+⚠️ Mantenha dependências atualizadas (se usar Node.js)
+
+================================================================================
+SUPORTE E RECURSOS
+================================================================================
+
+- MDN Web Docs: https://developer.mozilla.org/
+- CSS Tricks: https://css-tricks.com/
+- Stack Overflow: https://stackoverflow.com/
+- Documentação HTML: https://html.spec.whatwg.org/
+- Documentação CSS: https://www.w3.org/Style/CSS/
+
+================================================================================
+HISTÓRICO DE MUDANÇAS
+================================================================================
+
+v1.0 (19/11/2025):
+- Clonagem inicial do portfólio
+- Estrutura HTML5 completa
+- Estilos CSS responsivos
+- Scripts JavaScript básicos
+- Documentação completa
+
+================================================================================
+CONTATO E FEEDBACK
+================================================================================
+
+Se encontrar problemas ou tiver sugestões de melhorias, considere:
+- Revisar o README.md
+- Consultar a documentação oficial
+- Buscar soluções em comunidades online
+- Testar em diferentes navegadores
+
+================================================================================
+FIM DAS NOTAS
+================================================================================
+
+Obrigado por usar este template! Boa sorte com seu portfólio! 🚀
