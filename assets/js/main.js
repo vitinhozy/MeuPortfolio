@@ -207,3 +207,116 @@ if (document.readyState === 'loading') {
 } else {
     typeWriter();
 }
+
+function initExperienceTabs() {
+    const companyItems = document.querySelectorAll('.company-item');
+    const experienceContents = document.querySelectorAll('.experience-content');
+    
+    companyItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const company = this.getAttribute('data-company');
+            
+            // Remove active de todos
+            companyItems.forEach(item => item.classList.remove('active'));
+            experienceContents.forEach(content => content.classList.remove('active'));
+            
+            // Adiciona active no clicado
+            this.classList.add('active');
+            
+            // Mostra conteúdo correspondente
+            const targetContent = document.getElementById(`experience-${company}`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+}
+
+// Função para carregar experiências dinamicamente (opcional)
+function loadExperience(companyId, experienceData) {
+    const targetElement = document.getElementById(`experience-${companyId}`);
+    
+    if (targetElement && experienceData) {
+        targetElement.innerHTML = `
+            <div class="job-entry">
+                <div class="job-header">
+                    <h3 class="job-title">${experienceData.title}</h3>
+                    <p class="job-date">${experienceData.date}</p>
+                </div>
+                <ul class="job-description">
+                    ${experienceData.description.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+}
+
+// Exemplo de dados para experiências (você pode carregar de um JSON)
+const experiencesData = {
+    'empresa2': {
+        title: 'Desenvolvedor Backend',
+        date: '2022 - 2024',
+        description: [
+           
+        ]
+    },
+};
+
+// Inicializar quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+    initExperienceTabs();
+    const companyItems = document.querySelectorAll('.company-item');
+    companyItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = 'var(--shadow)';
+            }
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            }
+        });
+    });
+});
+
+function updateTypingText() {
+    const typingElement = document.getElementById('typing-text');
+    const fullText = 'Victor Castro';
+    let index = 0;
+    let isDeleting = false;
+    
+    function type() {
+        if (!isDeleting) {
+            if (index < fullText.length) {
+                typingElement.textContent = fullText.substring(0, index + 1);
+                index++;
+                setTimeout(type, 100);
+            } else {
+                setTimeout(() => {
+                    isDeleting = true;
+                    type();
+                }, 2000);
+            }
+        } else {
+            if (index > 0) {
+                typingElement.textContent = fullText.substring(0, index - 1);
+                index--;
+                setTimeout(type, 50);
+            } else {
+                isDeleting = false;
+                setTimeout(type, 500);
+            }
+        }
+    }
+    
+    type();
+}
+
+// Iniciar animação de digitação
+if (document.getElementById('typing-text')) {
+    updateTypingText();
+}

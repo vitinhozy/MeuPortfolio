@@ -10,12 +10,20 @@
 
 <body>
     <nav class="social-nav">
-        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+        <a href="https://linkedin.com/in/victor-castro-10756a274/" target="_blank" title="LinkedIn">
             <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
             </svg>
             <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/vitinhozy" target="_blank" title="GitHub">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span>GitHub</span>
         </a>
     </nav>
 
@@ -24,7 +32,7 @@
             <div class="hero-content">
                 <p class="hero-greeting">Oi! Eu sou o</p>
                 <h1 class="hero-title"><span id="typing-text">Victor Castro</span><span class="cursor">|</span></h1>
-                <p class="hero-subtitle">Em evolução constante para me tornar um Engenheiro de Dados, unindo automação,
+                <p class="hero-subtitle">Em evolução constante, unindo automação,
                     análise e tecnologia.</p>
 
                 <p class="hero-emphasis">
@@ -48,90 +56,101 @@
         <section class="experience">
             <h2>Minha experiência:</h2>
             <div class="companies-list">
-                <div class="company-item">Brasal Refrigerantes</div>
+                <div class="company-item active" data-company="brasal">Brasal Refrigerantes</div>
+                <div class="company-item" data-company="empresa2">Secretaria de Educação - Brasília DF</div>
             </div>
 
-            <div class="job-entry">
-                <div class="job-header">
-                    <h3 class="job-title">Aprendizagem de TI – Foco em Dados, Automação e Processos</h3>
-                    <p class="job-date">2024 - Atual</p>
-                </div>
+            <div id="experience-brasal" class="experience-content active">
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3 class="job-title">Aprendiz de TI – Foco em Dados, Automação e Processos</h3>
+                        <p class="job-date">2024 - Atual</p>
+                    </div>
 
-                <ul class="job-description">
-                    <li>Entrega de melhorias significativas no tempo de execução de atividades dos colaboradores,
-                        reduzindo tarefas que
-                        levavam de 20 a 40 minutos para aproximadamente 10 minutos, aumentando eficiência e precisão dos
-                        processos.</li>
-
-                    <li>Desenvolvimento de automações personalizadas utilizando RPA integradas ao SAP, otimizando
-                        rotinas
-                        repetitivas como preenchimento de dados, execução de transações e consolidação de informações
-                        financeiras.</li>
-
-                    <li>Construção de fluxos automatizados utilizando Power Automate (Low Code), aplicados conforme a
-                        complexidade e necessidades de cada processo.</li>
-
-                    <li>Implementação de processos de ETL com Power Query e Python, realizando extração, transformação e
-                        carregamento de dados do SAP para análises internas e integrações.</li>
-
-                    <li>Condução em projetos de extração e limpeza de dados com Python, utilizando técnicas de
-                        normalização, padronização e validação para garantir escalabilidade e qualidade das informações.
-                    </li>
-
-                    <li>Desenvolvimento de dashboards interativos no Power BI, focados em produtos, preços e canais de
-                        venda, gerando insights estratégicos para o planejamento da empresa.</li>
-
-                    <li>Construção de KPIs e visualizações dinâmicas com DAX e modelagem de dados, possibilitando
-                        análises de margem, volume, embalagens e simulações de reajustes de preços.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="projects">
-            <h2>Meus Projetos:</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" class="project-link">Ver mais →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" class="project-link">Ver mais →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" class="project-link">Ver mais →</a>
+                    <ul class="job-description">
+                        <li>Entrega de melhorias significativas no tempo de execução de atividades dos colaboradores,
+                            reduzindo tarefas que levavam horas para minutos, aumentando
+                            66% de eficiência e precisão dos processos.</li>
+                        <li>Desenvolvimento de automações personalizadas utilizando RPA integradas ao SAP, otimizando
+                            rotinas
+                            repetitivas como preenchimento de dados, execução de transações e consolidação de
+                            informações
+                            financeiras.</li>
+                        <li>Construção de fluxos automatizados utilizando Power Automate (Low Code), aplicados conforme
+                            a
+                            complexidade e necessidades de cada processo.</li>
+                        <li>Implementação de processos de ETL com Power Query e Python, realizando extração,
+                            transformação e
+                            carregamento de dados do SAP para análises internas e integrações.</li>
+                        <li>Condução em projetos de extração e limpeza de dados com Python, utilizando técnicas de
+                            normalização, padronização e validação para garantir escalabilidade e qualidade das
+                            informações.
+                        </li>
+                        <li>Desenvolvimento de dashboards interativos no Power BI, focados em produtos, preços e canais
+                            de
+                            venda, gerando insights estratégicos para o planejamento da empresa.</li>
+                    </ul>
                 </div>
             </div>
-        </section>
 
-        <section class="skills">
-            <h2>Habilidades Técnicas:</h2>
-            <div class="skills-grid">
-                <div class="skill-tag">Python</div>
-                <div class="skill-tag">VBA (Excel + SAP)</div>
-                <div class="skill-tag">Power BI</div>
-                <div class="skill-tag">DAX</div>
-                <div class="skill-tag">SQL</div>
-                <div class="skill-tag">Power Query</div>
-                <div class="skill-tag">ETL</div>
-                <div class="skill-tag">Automação de Processos</div>
-                <div class="skill-tag">Power Automate</div>
-                <div class="skill-tag">Modelagem de Dados</div>
-                <div class="skill-tag">Sistemas ERP</div>
-                <div class="skill-tag">Git</div>
+            <div id="experience-empresa2" class="experience-content">
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3 class="job-title">Estágio - Técnico em Informática</h3>
+                        <p class="job-date">Maio 2024 - Set 2024</p>
+                    </div>
+
+                    <ul class="job-description">
+                        <li>Contribuí para a redução de aproximadamente 30% no tempo médio de resolução de chamados,
+                            proporcionando maior disponibilidade dos sistemas e melhor experiência aos usuários.</li>
+                        <li>Diagnóstico e resolução de falhas técnicas, reduzindo tempo de inatividade e aumentando a
+                            produtividade dos usuários.</li>
+                        <li> Manutenção, configuração e montagem de computadores, impressoras e redes locais, garantindo
+                            pleno funcionamento da infraestrutura.</li>
+                        <li>Suporte técnico aos colaboradores, solucionando incidentes de hardware, software e
+                            conectividade com rapidez e eficiência.</li>
+                    </ul>
+                </div>
             </div>
-        </section>
 
 
-        <section class="contact">
-            <h2>Entre em contato:</h2>
-            <p>Estou sempre aberto para novas oportunidades e conversas interessantes.</p>
-            <a href="mailto:seu.email@exemplo.com" class="cta-button">Enviar E-mail</a>
-        </section>
+            <section class="projects">
+                <h2>Meus Projetos:</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" class="project-link">Ver mais →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" class="project-link">Ver mais →</a>
+                    </div>
+            </section>
+
+            <section class="skills">
+                <h2>Habilidades Técnicas:</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">ETL</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">NoSQL</div>
+                    <div class="skill-tag">Modelagem de Dados</div>
+                    <div class="skill-tag">Power BI</div>
+                    <div class="skill-tag">DAX</div>
+                    <div class="skill-tag">Automação de Processos</div>
+                    <div class="skill-tag">Power Automate</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">Docker (Em Aprendizado)</div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Entre em contato:</h2>
+                <p>Estou sempre aberto para novas oportunidades e conversas interessantes.</p>
+                <a href="mailto:victorrodrigo04@gmail.com" class="cta-button">Enviar E-mail</a>
+            </section>
     </main>
 
     <footer class="footer">
